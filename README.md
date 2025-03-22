@@ -15,12 +15,12 @@ This project automates the preprocessing of CSV files by filtering, cleaning, an
 📄 Logging System
 All logs are stored in data_preprocessing.log, tracking:
 🔹 INFO: Normal operations like filtering and saving.
-🔹 WARNING: Non-critical issues such as missing values handled with imputation.
+🔹 WARNING: Non-critical issues such as missing values are handled with imputation.
 🔹 ERROR: Failures like missing input files or database errors.
 
 📂 Project Structure
-graphql
-Copy code
+
+
 📁 Dat_Preprocessor
 │── filter.py         # Filters data based on required columns
 │── imputation.py     # Handles missing value imputation
@@ -44,6 +44,7 @@ python main.py files/ output_files/
 sql
 Copy code
 SELECT * FROM sales_data WHERE Product = 'Laptop';
+
 🤖 Why CSV Preprocessing is Important?
 🔹 Data Cleaning & Transformation: Ensures structured and error-free data.
 🔹 Automated Processing: Saves time by handling large datasets efficiently.
