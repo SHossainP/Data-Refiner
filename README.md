@@ -8,11 +8,17 @@ This project automates the preprocessing of CSV files by filtering, cleaning, an
 🎯 Features
 
 ✅ Batch Processing: Processes all CSV files in a directory automatically.
+
 ✅ Data Filtering: Removes rows with missing 'Date' or 'Product' values.
+
 ✅ Missing Value Imputation: Fills missing 'Sales' and 'Revenue' using column median.
+
 ✅ Database Storage: Saves processed data into an SQLite database for structured retrieval.
+
 ✅ Dynamic Output Naming: Generates filenames as cleaned_<year>.csv.
+
 ✅ Automatic Directory Handling: Creates an output directory if it doesn’t exist.
+
 ✅ Logging System: Tracks each processing step and errors for debugging.
 
 📄 Logging System
@@ -46,22 +52,19 @@ All logs are stored in data_preprocessing.log, tracking:
 
 1️⃣ Setup Environment
 
-sh
-Copy code
+
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
 
 2️⃣ Run the Script
 
-sh
-Copy code
+
 python main.py files/ output_files/
 
 3️⃣ Query Cleaned Data (Example SQLite Query)
 
-sql
-Copy code
+
 SELECT * FROM sales_data WHERE Product = 'Laptop';
 
 🤖 Why CSV Preprocessing is Important?
